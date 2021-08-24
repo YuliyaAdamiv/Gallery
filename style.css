@@ -14,6 +14,7 @@
 .container img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .picture:nth-child(12n+1),
