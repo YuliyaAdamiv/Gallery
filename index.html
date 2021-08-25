@@ -10,91 +10,133 @@
 </head>
 
 <body class="light-theme">
-    <header class="header">
-        <h2 class="h2">Backendless</h2>
+    <header>
+        <a href="#">
+            <h2 class="title">Backendless</h2>
+        </a>
         <nav class="nav nav-input">
-            <input type="radio" id="radioButton1"><label for="radioButton1">Light Theme</label>
-            <input type="radio" id="radioButton2"><label for="radioButton2">Dark Theme</label>
-            <input type="radio" id="radioButton3"><label for="radioButton3">Backendless Theme</label>
+            <input type="radio" id="light-theme" name="radio-theme" onchange="setTheme('light-theme')"><label for="light-theme">Light Theme</label>
+            <input type="radio" id="dark-theme" name="radio-theme" onchange="setTheme('dark-theme')"><label for="dark-theme">Dark Theme</label>
+            <input type="radio" id="backendless-theme" name="radio-theme" onchange="setTheme('backendless-theme')"><label for="backendless-theme">Backendless Theme</label>
         </nav>
         <nav class="nav nav-button">
-            <button id="light">Light Theme</button>
-            <button onclick="myFunction()" id="dark">Dark Theme</button>
-            <button id="backendless">Backendless Theme</button>
+            <button onclick="setTheme('light-theme')">Light Theme</button>
+            <button onclick="setTheme('dark-theme')">Dark Theme</button>
+            <button onclick="setTheme('backendless-theme')">Backendless Theme</button>
         </nav>
         <nav class="nav nav-select">
             <select name="theme-select" id="theme-select">
-            <option value="light">Light Theme</option>
-            <option value="dark">Dark Theme</option>
-            <option value="backendless">Backendless Theme</option>
+            <option value="light-theme">Light Theme</option>
+            <option value="dark-theme">Dark Theme</option>
+            <option value="backendless-theme">Backendless Theme</option>
           </select>
         </nav>
     </header>
     <section class="main">
-        <h1 data-text="Backendless Gallery">Backendless Gallery</h1>
+        <div class="site-name">
+            <span>B</span><span>a</span><span>c</span><span>k</span><span>e</span><span>n</span><span>d</span><span>l</span><span>e</span><span>s</span><span>s</span> &nbsp;
+            <span>G</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span>
+        </div>
         </div>
         <div class="container show">
             <div class="picture">
-                <img src="https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw" alt="strawberries">
+                <img src="http://placehold.it/1000x601" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA" alt="forest">
+                <img src="http://placehold.it/1000x602" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/357/3888/2592.jpg?hmac=322FsZ93_k9v7NNFeCTlqk_gobPP_1mYJIQwk7GxjMc" alt="clock">
+                <img src="http://placehold.it/1000x603" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/360/1925/1280.jpg?hmac=vX9T-qgnqfOUqLnxlsxCZfkKn_wi-9vtPKdbq7H6EgU" alt="flower">
+                <img src="http://placehold.it/1000x604" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/384/5184/3456.jpg?hmac=n_bnNJlJ4j2jW3Zry26h7ZP1AihR7zQH1_T7CiYNQK0" alt="water">
+                <img src="http://placehold.it/1000x605" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/392/5580/3720.jpg?hmac=SHJx3DtQS1aAPntmf27wp2mQ5FqQHFKh7hai6wdZSrA" alt="bridge">
+                <img src="http://placehold.it/1000x600" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/429/4128/2322.jpg?hmac=_mAS4ToWrJBx29qI2YNbOQ9IyOevQr01DEuCbArqthc" alt="raspberry">
+                <img src="http://placehold.it/1000x600" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/431/5398/3599.jpg?hmac=bc325kFqsm626RGhgs-XwG_GFqd4x3VmXtramO12qL8" alt="cup">
+                <img src="http://placehold.it/1000x600" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/466/3264/2176.jpg?hmac=idw8vAABj5gZ5zx_0StHxo-P5wP6EwV6z7Y7m58JTsc" alt="nature">
+                <img src="http://placehold.it/1000x600" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/507/3882/2912.jpg?hmac=hfaajgtH88_TZmMb24LnS2XFyW6x_MoehZOgw4tCSD8" alt="river">
+                <img src="http://placehold.it/1000x600" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/520/3456/5184.jpg?hmac=IyiGt6PJObBl0yGDXaR8iV0jtyFyOrxvfCVzXWBxr_4" alt="town">
+                <img src="http://placehold.it/1000x600" alt="img">
             </div>
             <div class="picture">
-                <img src="https://i.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA" alt="forest">
+                <img src="http://placehold.it/1000x600" alt="img">
             </div>
-
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
+            <div class="picture">
+                <img src="http://placehold.it/1000x600" alt="img">
+            </div>
         </div>
 
         <div class="modal">
-            <div class="modal-box">
+            <div class="modal-body">
                 <span class="close-button">X</span>
+                <br>
+                <br>
+                <img class="modal-body-image" alt="img">
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer>
         <div class="email">
-            <p><u>Backendless.com</u></p>
-            <p><u>555-555-555</u></p>
+            <p><a href="#">Backendless.com</a></p>
+            <p><a href="#">555-555-555</a></p>
         </div>
         <div class="icon">
-            <img src="img/instagram.png">
-            <img src="img/facebook.png">
-            <img src="img/twitter.png">
-            <img src="img/telegram.png">
-            <img src="img/youtube.png">
-            <img src="img/vk-logo.png">
-            <img src="img/email.png">
+            <a href="https://www.instagram.com"><img src="img/instagram.png"></a>
+            <a href="https://uk-ua.facebook.com"><img src="img/facebook.png"></a>
+            <a href="https://twitter.com"><img src="img/twitter.png"></a>
+            <a href="https://telegram.com"><img src="img/telegram.png"></a>
+            <a href="https://youtube.com"><img src="img/youtube.png"></a>
+            <a href="https://vk.com"><img src="img/vk-logo.png"></a>
+            <a href="https://email.com"><img src="img/email.png"></a>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="index.js"></script>
 </body>
 

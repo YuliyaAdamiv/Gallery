@@ -1,5 +1,5 @@
-    .body {
-        margin: 0px;
+    body {
+        display: initial;
     }
     
     .container {
@@ -23,28 +23,23 @@
         grid-row: auto /span 3;
     }
     
-    .h1 {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    .header,
-    .footer {
+    header,
+    footer {
         background-color: #ccc;
         width: 100%;
         position: fixed;
+        z-index: 1000;
     }
     
-    .header {
+    header {
         top: 0;
     }
     
-    .footer {
+    footer {
         bottom: 0;
     }
     
-    .h2,
+    .title,
     .email {
         display: inline-block;
         margin-left: 10px;
@@ -52,8 +47,8 @@
     
     .nav {
         position: absolute;
-        top: 35px;
-        right: 10px;
+        top: 25px;
+        right: 20px;
     }
     
     .icon {
@@ -67,43 +62,15 @@
         margin-left: 20px;
     }
     
-    body {
-        background: linear-gradient(#f70000, #f89200, #f8f501, #038f00, #0168f8, #a200f7);
-    }
-    
-    h1 {
-        font-family: 'Teko', sans-serif;
-        text-transform: uppercase;
-        font-size: 3rem;
-        text-align: center;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        margin: 0;
-        min-height: calc(50vh - 16px);
-        position: relative;
+    a {
         color: #000;
-    }
-    
-    h1:before {
-        content: attr(data-text);
-        position: absolute;
-        background: linear-gradient(#f70000, #f89200, #f8f501, #038f00, #0168f8, #a200f7);
-        -webkit-background-clip: text;
-        color: transparent;
-        background-size: 100% 90%;
-        line-height: 0.9;
-        clip-path: ellipse(120px 120px at -2.54% -9.25%);
-        animation: swing 5s infinite;
-        animation-direction: alternate;
     }
     
     .icon img {
         width: 20px;
         height: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
     
     .modal {
@@ -117,15 +84,20 @@
         visibility: hidden;
     }
     
-    .modal-box {
+    .modal-body {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: pink;
+        background-color: #ffffff;
         padding: 1rem 1.5rem;
         width: 24rem;
         border-radius: 0.5rem;
+    }
+    
+    .modal-body-image {
+        width: 100%;
+        height: 60%;
     }
     
     .close-button {
@@ -148,9 +120,15 @@
         background: #000;
     }
     
-    .dark-theme .header,
-    .dark-theme .footer {
-        background-color: #778899;
+    .dark-theme header,
+    .dark-theme footer {
+        background-color: #000;
+        color: #ffffff;
+        border: 2px solid darkblue;
+    }
+    
+    .dark-theme a,
+    .dark-theme .site-name span {
         color: #ffffff;
     }
     
@@ -158,63 +136,83 @@
         filter: invert(100%);
     }
     
-    .dark-theme h1 {
-        color: #ffffff;
+    .dark-theme .modal-body {
+        background-color: #000;
     }
     
-    .light-theme {
+    .light-theme,
+    .light-theme .modal-body {
         background: #ffffff;
     }
     
-    .light-theme .header,
-    .light-theme .footer {
+    .light-theme header,
+    .light-theme footer {
         background-color: #ffffff;
         color: #000;
-        border: 2px solid gray;
+        border: 2px solid #000;
     }
     
     .light-theme .icon {
         filter: inherit;
     }
     
-    .light-theme h1 {
-        color: lightgray;
+    .light-theme a,
+    .light-theme .site-name span {
+        color: #000;
     }
     
-    .backendless-theme {
+    .backendless-theme,
+    .backendless-theme .modal-body {
         background: linear-gradient(#f70000, #f89200, #f8f501, #038f00, #0168f8, #a200f7);
         color: #1a9790;
     }
     
-    .backendless-theme .header,
-    .backendless-theme .footer {
+    .backendless-theme header,
+    .backendless-theme footer {
         background-color: #ccc;
+        border: 2px solid #1a9790;
     }
     
     .backendless-theme .icon {
         filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
     }
     
-    .backendless-theme h1 {
+    .backendless-theme a,
+    .backendless-theme .site-name span {
         color: #1a9790;
     }
     
-    @keyframes swing {
-        0% {
-            -webkit-clip-path: ellipse(120px 120px at -2.54% -9.25%);
-            clip-path: ellipse(120px 120px at -2.54% -9.25%)
+    .site-name {
+        font-size: 3rem;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .site-name span {
+        opacity: 0;
+        transform: translate(-150px, 0) scale(.3);
+        animation: siteNameAnimation 4s infinite;
+    }
+    
+    @keyframes siteNameAnimation {
+        25% {
+            transform: translate(50px, 0) scale(1);
+            opacity: 1;
         }
         50% {
-            -webkit-clip-path: ellipse(120px 120px at 49.66% 64.36%);
-            clip-path: ellipse(120px 120px at 49.66% 64.36%);
+            transform: translate(0) scale(1);
+            opacity: 0;
         }
-        100% {
-            -webkit-clip-path: ellipse(120px 120px at 102.62% -1.61%);
-            clip-path: ellipse(120px 120px at 102.62% -1.61%);
+        75% {
+            transform: translate(0) scale(1);
+            opacity: 1;
         }
     }
     
-    @media only screen and (min-width: 320px) and (max-width: 639px) {
+    @media only screen and (min-width: 320px) and (max-width: 640px) {
         .nav-select {
             visibility: visible;
         }
@@ -222,12 +220,12 @@
         .nav-input {
             visibility: hidden;
         }
-        .h2 {
+        .title {
             display: inline-block;
         }
         .nav {
             position: absolute;
-            top: 35px;
+            top: 25px;
             right: 0;
         }
         .container {
@@ -237,6 +235,11 @@
         .picture:nth-child(4n+1) {
             grid-column: span 3;
             grid-row: span 2;
+        }
+        .picture:nth-child(10n+10),
+        .picture:nth-child(22n+22) {
+            grid-column: span 1;
+            grid-row: span 1;
         }
         .icon,
         .email {
@@ -255,12 +258,12 @@
         .nav-input {
             visibility: hidden;
         }
-        .h2 {
+        .title {
             display: inline-block;
         }
         .nav {
             position: absolute;
-            top: 35px;
+            top: 25px;
             right: 0;
         }
         .picture:nth-child(3n+1) {
