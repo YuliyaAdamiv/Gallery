@@ -1,7 +1,7 @@
 /* Modal window */
 
-const show = document.querySelector(".show");
-const modal = document.querySelector(".modal");
+const gallery = document.querySelector(".gallery");
+const modal = document.querySelector("aside");
 const modalBodyImage = document.querySelector(".modal-body-image");
 const closeButton = document.querySelector(".close-button");
 
@@ -13,7 +13,7 @@ function toggleModal(e) {
     modalBodyImage.setAttribute('src', e.target.src);
 }
 
-show.addEventListener("click", toggleModal);
+gallery.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 
 /* Theme */
