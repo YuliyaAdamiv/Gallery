@@ -128,14 +128,16 @@ address {
 }
 
 .dark-theme a,
-.dark-theme .title,
-.dark-theme .gallery {
-    background: #000;
+.dark-theme .title {
     color: #ffffff;
 }
 
 .dark-theme .icons {
     filter: invert(100%);
+}
+
+.dark-theme .gallery {
+    background: #000;
 }
 
 .dark-theme .modal-body {
@@ -158,10 +160,12 @@ address {
     filter: inherit;
 }
 
-.light-theme a,
-.light-theme .title,
 .light-theme .gallery {
     background: #ffffff;
+}
+
+.light-theme a,
+.light-theme .title {
     color: #000;
 }
 
@@ -181,10 +185,12 @@ address {
     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
 
-.backendless-theme a,
-.backendless-theme .title,
 .backendless-theme .gallery {
     background: linear-gradient(#f70000, #f89200, #f8f501, #038f00, #0168f8, #a200f7);
+}
+
+.backendless-theme a,
+.backendless-theme .title {
     color: #1a9790;
 }
 
