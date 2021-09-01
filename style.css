@@ -129,6 +129,7 @@ address {
 
 .dark-theme a,
 .dark-theme .title {
+    background: #000;
     color: #ffffff;
 }
 
