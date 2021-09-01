@@ -136,10 +136,6 @@ address {
     filter: invert(100%);
 }
 
-.dark-theme .gallery {
-    background: #000;
-}
-
 .dark-theme .modal-body {
     background: #000;
 }
@@ -158,10 +154,6 @@ address {
 
 .light-theme .icons {
     filter: inherit;
-}
-
-.light-theme .gallery {
-    background: #ffffff;
 }
 
 .light-theme a,
@@ -183,10 +175,6 @@ address {
 
 .backendless-theme .icons {
     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-}
-
-.backendless-theme .gallery {
-    background: linear-gradient(#f70000, #f89200, #f8f501, #038f00, #0168f8, #a200f7);
 }
 
 .backendless-theme a,
