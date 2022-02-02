@@ -1,5 +1,6 @@
 # Gallery
-This project build at the basic structure of HTML in web design. You can see the solutions in working with blocks, responsive design, crossbrowser compatible. 
+This project uses css animations, transition between themes using Javascript and template grid system. The main idea is to solve the problem by adding an unlimited number of photos to the template. 
+
 Live demo [_here_](https://yuliyaadamiv.github.io/Gallery/). 
 
 ## Table of Contents
@@ -16,8 +17,8 @@ Live demo [_here_](https://yuliyaadamiv.github.io/Gallery/).
 
 ## General Information
 
-- The project consists of index.html, scss files, images and javascript file.
-- The purpose of your project was show work with grid and flex system.
+- The project consists of index.html, css files, images and javascript file.
+- The purpose of your project was show work with grid system.
 
 ## Technologies Used
 
