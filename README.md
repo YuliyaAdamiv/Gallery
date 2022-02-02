@@ -1,6 +1,6 @@
 # Gallery
 This project build at the basic structure of HTML in web design. You can see the solutions in working with blocks, responsive design, crossbrowser compatible. 
-Live demo [_here_](https://yuliyazakharchuk.github.io/Gallery/). 
+Live demo [_here_](https://yuliyaadamiv.github.io/Gallery/). 
 
 ## Table of Contents
 
