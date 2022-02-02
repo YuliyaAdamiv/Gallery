@@ -127,7 +127,8 @@ address {
     border: 2px solid darkblue;
 }
 
-.dark-theme .title {
+.dark-theme .title,
+.dark-theme a {
     color: #ffffff;
 }
 
@@ -161,24 +162,24 @@ address {
     color: #000;
 }
 
-.backendless-theme,
-.backendless-theme .modal-body {
+.gallery-theme,
+.gallery-theme .modal-body {
     background: linear-gradient(#f70000, #f89200, #f8f501, #038f00, #0168f8, #a200f7);
     color: #1a9790;
 }
 
-.backendless-theme header,
-.backendless-theme footer {
+.gallery-theme header,
+.gallery-theme footer {
     background-color: #ccc;
     border: 2px solid #1a9790;
 }
 
-.backendless-theme .icons {
+.gallery-theme .icons {
     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
 
-.backendless-theme a,
-.backendless-theme .title {
+.gallery-theme a,
+.gallery-theme .title {
     color: #1a9790;
 }
 
