@@ -69,6 +69,10 @@ nav {
     margin: 0 10px;
 }
 
+.gallery figure:hover {
+    transform: scale(1.5);
+}
+
 figure {
     display: block;
     margin-block-start: 0em;
@@ -138,6 +142,10 @@ address {
 
 .dark-theme .modal-body {
     background: #000;
+}
+
+.dark-theme figure {
+    border: 2px solid darkblue;
 }
 
 .light-theme,
